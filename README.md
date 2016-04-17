@@ -24,33 +24,25 @@ Wir messen neben Feuchtigkeit (humidity), Temperatur (temperatur) und UV-Strahlu
 ## Setup Beschreibung
 #### Hardwarekonfiguration
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/IMG-20160417-WA0005.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/IMG-20160417-WA0005.jpg" width="400"/>
 
 Die Verkabelung entspricht dem Fritzingschema, da alle Chips 3.3V Eingangspannung haben bietet es sich an alle über diese Leiste mit Energie zu versorgen, die Masse wird genauso eingesetzt. Zu beachten ist ebenfalls das Sowohl UV-Werte Als auch Temperatur und Feuchtigkeit über den selben Pin ausgeben.
 
 Die Fibox Schutzhülle bereiten wir auf den Einsatz der Sensoren vor, indem wir zunächst Öffnungen für Kabel, einmal Netzwerk und Stromversorgung zum anderen für alle Sensoren bis auf den UV-Chip.
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110146.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110135.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_111319.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110146.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110135.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_111319.jpg" width="400"/>
 
 Der Temperatur und Feuchtigkeitssensor wird zusammen mit den beiden Microphonen in ein externes Fach, dass mit Heißkleber an die "Fibox" angebracht wird, verpackt. Das Fach wird stärker der Witterung ausgesetzt sein als das Innere der "Fibox" um genaure Daten zu gewinnen.
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112654.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112654.jpg" width="400"/>
 
 Den UV-Sensor befestigen wir mit einem Adapterstück und etwas Heißkleber einfach direkt unter der transparenten Fibox Scheibe.
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110129.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110129.jpg" width="400"/>
 
 Wichtig ist, dass wir die Wetterbedingungen beim Aufbau der SenseBox beachten, die Sensoren sollten sowohl vor Regen als auch Kondenzwasser geschützt sein, zeitgleich aber so offen liegen, dass Messwerte nicht verfälscht werden.
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112634.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112643.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_120958.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112634.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112643.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_120958.jpg" width="400"/>
 
 #### Softwaresketch
 
@@ -188,11 +180,7 @@ float uvf() {
 ```
 ###### Unsere improvisierte Funktion zur Umrechnung der Mikrofonsignale.
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093116.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093106.jpg" width="200"/>
-
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093058.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093116.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093106.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_093058.jpg" width="400"/>
 
 Nach einigen Testläufen mit einem Geeichten Decibelmesser haben wir eine Regelmäßigkeit herausgefunden nämlich, dass Geräusche ab 60db sowohl nach oben wie unten entlang von 355 ausschlagen, dementsprechend haben wir unsere Funktion gebaut. Genau sind diese Werte aber nicht!
 
@@ -300,4 +288,4 @@ Für die Registstrierung bei openSenseMap.org wurden die Bildschirmanweisungen a
 
 Die Wetterstation wurde draußen an einem Geländer befestigt, dieses Geländer zeigt Richtung Südosten. Um die Stabilität zu gewährleisten,  wurde die Box mit Kabelbindern befestigt und auch das LAN-Kabel wurde an einer der Streben befestigt, das allerdings nur aus ästhetischen Gründen. Der genaue Standort ist auf der OpensenseMap einzusehen. 
 
-<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/IMG-20160417-WA0002.jpg" width="200"/>
+<img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/IMG-20160417-WA0002.jpg" width="400"/>
