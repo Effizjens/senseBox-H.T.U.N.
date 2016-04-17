@@ -1,7 +1,7 @@
 <img src="https://github.com/sensebox/OER/blob/master/senseBox_edu/images/sensebox_logo_neu.png" width="200"/>
 
-# Sensebox H.T.U.N.
-Unsere Sensebox bauen wir so auf, dass sie verschiedene Wetterdaten Bei Opensensemap hoch lädt.
+# sensebox H.T.U.N.
+Unsere senseBox bauen wir so auf, dass sie verschiedene Wetterdaten Bei openSenseMap hoch lädt.
 
 ## Ziel
 Wir messen neben Feuchtigkeit (humidity), Temperatur (temperatur) und UV-Strahlung in Standard-Skalen auch die Lautstärke (noise) mangels genauer Umrechnungsvorgeben, mit unserer eigenen Funktion die an die Decibelskala angelenht ist und der Einfachheit halber von uns auch genauso benannt wurde. Wir interessieren uns für sämtliche Daten die unsere Sensoren aufnehmen, insbesondere die Lautstärke welche in Nähe von Studentenwohnungen interessante Daten zu deren Verhalten ergeben könnten.
@@ -40,7 +40,7 @@ Den UV-Sensor befestigen wir mit einem Adapterstück und etwas Heißkleber einfa
 
 <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_110129.jpg" width="400"/>
 
-Wichtig ist, dass wir die Wetterbedingungen beim Aufbau der SenseBox beachten, die Sensoren sollten sowohl vor Regen als auch Kondenzwasser geschützt sein, zeitgleich aber so offen liegen, dass Messwerte nicht verfälscht werden.
+Wichtig ist, dass wir die Wetterbedingungen beim Aufbau der senseBox beachten, die Sensoren sollten sowohl vor Regen als auch Kondenzwasser geschützt sein, zeitgleich aber so offen liegen, dass Messwerte nicht verfälscht werden.
 
 <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112634.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_112643.jpg" width="400"/>  <img src="https://github.com/Invisible619/Sensebox-H.T.U.N./blob/master/20160408_120958.jpg" width="400"/>
 
@@ -53,7 +53,7 @@ https://github.com/ftruzzi/HDC1000-Arduino.
 
 die wir in einer Samlung entweder schon im Ordner (...)\Arduino\libraries findet oder von der github Website https://github.com/watterott/HDC100X-Breakout. Ansonsten lassen sich die Librarys auch prima über https://google.com finden!
 
-Den Code für das Ethernetshield bekommt ihr personalisiert von Opensensemap per E-mail zugeschickt.
+Den Code für das Ethernetshield bekommt ihr personalisiert von openSenseMap per E-mail zugeschickt.
 
 
 #### Der Sketch
@@ -90,7 +90,7 @@ HDC100X HDC(0x43);		//
 SHT1x sht1x(dataPin, clockPin);
 ```
 
-Einige der Zeilen die ihr per E-mail von Opensensemap bekommt.
+Einige der Zeilen die ihr per E-mail von openSenseMap bekommt.
 wir erkennen das die Sensorwerte an die ID´s gebunden werden. Ausserdem wird das Ethernetshield konfiguriert.
 ```c
 //SenseBox ID
@@ -115,7 +115,7 @@ int postInterval = 10000; //Uploadintervall in Millisekunden
 long oldTime = 0;
 
 ```
-Im Setup starten wir Routinen um uns mit Opensensemap zu verbinden, der Code ist Inhalt der Opensensemap-Mail. 
+Im Setup starten wir Routinen um uns mit openSenseMap zu verbinden, der Code ist Inhalt der openSenseMap-Mail. 
 ```c
 void setup()
 {
@@ -142,7 +142,7 @@ void setup()
   Serial.println("Starting loop.");
 }
 ```
-Im Loop laufen die Messroutinen ab, die Frequenz haben wir oben am Ehternetshield definiert (postInterval). Ausserdem Laden wir die Daten gesammelt in die "upload()" Funktion um sie später in die Opensensemap hoch zu laden.
+Im Loop laufen die Messroutinen ab, die Frequenz haben wir oben am Ehternetshield definiert (postInterval). Ausserdem Laden wir die Daten gesammelt in die "upload()" Funktion um sie später in die openSenseMap hoch zu laden.
 ```c
 void loop()
 {
@@ -206,7 +206,7 @@ float miccalc(int x) {
   return x;
 }
 ```
-Noch mehr Code zum Upload in die Opensensemap, beinhaltet unter anderem Abfragen zum Verbindungsstatus, und Befehle zum Ausgeben der Daten.
+Noch mehr Code zum Upload in die openSenseMap, beinhaltet unter anderem Abfragen zum Verbindungsstatus, und Befehle zum Ausgeben der Daten.
 ```c
 void postFloatValue(float measurement, int digits, String sensorId)
 {
@@ -278,9 +278,9 @@ void upload() {
 
 
 
-## OpenSenseMap Registrierung
+## openSenseMap Registrierung
 
-Für die Registstrierung bei openSenseMap.org wurden die Bildschirmanweisungen auf openSenseMap.org befolgt. Nachdem man seinen Namen, Mail-Adresse, Name und Aufstellungsort, sowie das Hardware Setup, inklusive Einheiten angegeben hat, erhält man eine eMail. In dieser ist das SenseBox Skript enthalten, dass schon das eingene Hardware Setup enthält, sowie den Code zum hochladen auf openSenseMap.org. Wenn man, wie im Beispiel gezeigt, für jede Messung eine eigene Funktion anlegt und auch eine Upload Funktion erstellt, sollte es kein Problem sein, das SenseBox Skript mit dem eingenen zu Verbinden, damit die gemessenen Daten erfolgreich hochgeladen werden können.
+Für die Registstrierung bei openSenseMap.org wurden die Bildschirmanweisungen auf openSenseMap.org befolgt. Nachdem man seinen Namen, Mail-Adresse, Name und Aufstellungsort, sowie das Hardware Setup, inklusive Einheiten angegeben hat, erhält man eine eMail. In dieser ist das senseBox Skript enthalten, dass schon das eingene Hardware Setup enthält, sowie den Code zum hochladen auf openSenseMap.org. Wenn man, wie im Beispiel gezeigt, für jede Messung eine eigene Funktion anlegt und auch eine Upload Funktion erstellt, sollte es kein Problem sein, das senseBox Skript mit dem eingenen zu Verbinden, damit die gemessenen Daten erfolgreich hochgeladen werden können.
 
  
 
