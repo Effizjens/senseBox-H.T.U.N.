@@ -277,4 +277,4 @@ Für die Registstrierung bei openSenseMap.org wurden die Bildschirmanweisungen a
 
 Die Wetterstation wurde draußen an einem Geländer befestigt, dieses Geländer zeigt Richtung Südosten. Um die Stabilität zu gewährleisten,  wurde die Box mit Kabelbindern befestigt und auch das LAN-Kabel wurde an einer der Streben befestigt, das allerdings nur aus ästhetischen Gründen. Der genaue Standort ist auf der OpensenseMap einzusehen. 
 
-Foto einfügen
+"Foto einfügen von der Box am Geländer"
