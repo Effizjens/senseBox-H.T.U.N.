@@ -200,7 +200,7 @@ float miccalc(int x) {
       //der einen 10er Bereich im dB bereich liegt
       j++;
     }
-    x = map(x, 0, j * 20, ((j + 6) * 10), ((j + 7) * 10));  
+    x = map(x, 0, pow(2, j) * 10, ((j + 6) * 10), ((j + 7) * 10));  
     //Überträgt diese beiden Bereiche aufeinadner
   }
   return x;
